@@ -12,10 +12,11 @@ vite_bin.vite_binary(
 js_run_binary(
     name = "dummy-vite",
     srcs = [
+        "index.html",
         #"dummy.js",
     ],
-    outs = [
-        "bazel-build/dummy.js",
+    out_dirs = [
+        "bazel-build",
     ],
     args = [
         "build",
